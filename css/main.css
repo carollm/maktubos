@@ -1,0 +1,82 @@
+@font-face{
+    font-family:'BaiJamjuree';
+    src: url('../vendor/Bai_Jamjuree/BaiJamjuree-Regular.ttf');
+}
+
+nav{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    font-family: 'BaiJamjuree';
+}
+
+nav a{
+    color: #1F2147;
+}
+
+nav a:hover{
+    color: #BCAAAA;
+}
+
+body{
+    margin-top: 71px;
+}
+
+h1{
+    font-family: 'BaiJamjuree';
+    font-size: 46px;
+    color: #E4201E;
+    text-align: center;
+}
+
+section.site-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+
+.carousel-item {
+    height: 30rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 30rem;
+}
+
+
+header img{
+    height: 550px;
+}
+
+#sobre img{
+    width: 400px;
+}
+
+#obras{
+    background-color: #BCAAAA;
+}
+
+footer{
+    background-color: #1F2147;
+    color: white;
+    font-family: 'BaiJamjuree';
+}
+
+footer h2{
+    font-size: 46px;
+}
+
+.card{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+form{
+    width: 50%;
+}
+
+#orcamento{
+    font-family: 'BaiJamjuree';
+    color: #1F2147;
+}
