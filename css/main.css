@@ -43,6 +43,12 @@ h2{
     text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+    h2{
+        font-size: 24px;
+    }
+}
+  
 #sobre p{
     font-family: 'BaiJamjuree';
     color: #1F2147;
@@ -57,7 +63,6 @@ section.site-section {
 }
 
 header{
-    /* height: 550px; */
     margin-bottom: 50px;
     background-attachment: scroll;
     position: relative;
@@ -68,40 +73,37 @@ header{
   
 }
 
-/* header img{
-    margin-top: 100px;
-    margin-left: 100px;
-    height: 150px;
-    transform: rotate(-20deg);
-} */
-/* 
-header img{
-    height: 450px;
-} */
 
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
   }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
     bottom: 3rem;
     z-index: 10;
-  }
+}
   
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
+/* Declare heights because of positioning of img element */
+.carousel-item {
     height: 32rem;
     background-color: #777;
-  }
-  .carousel-item > img {
+}
+/* .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 32rem;
-  }
-  
+} */
+
+.carousel-item > img {
+    min-width: 100%;
+    height: 32rem;
+    top: 0;
+    left: 0;
+}
 
 #sobre img{
     width: 400px;
@@ -150,9 +152,3 @@ footer{
 footer h2{
     font-size: 46px;
 }
-
-/* .linha{
-	background-color: #ececec;
-	background-color: rgba(233,230,230,0.79);
-	padding: 2% 0;
-} */
