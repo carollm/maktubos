@@ -1,35 +1,34 @@
-@font-face{
-    font-family:'BaiJamjuree';
+@font-face {
+    font-family: 'BaiJamjuree';
     src: url('../vendor/Bai_Jamjuree/BaiJamjuree-Regular.ttf');
 }
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-  
+
 .custom-toggler.navbar-toggler {
     border-color: #ddd;
 }
 
-h1{
+h1 {
     font-family: 'BaiJamjuree';
     font-size: 46px;
     color: #E4201E;
     text-align: center;
 }
 
-h2{
+h2 {
     font-family: 'BaiJamjuree';
     color: white;
     text-align: left;
 }
 
-span{
+span {
     text-decoration: underline;
 }
 
-
-#sobre p{
+#sobre p {
     font-family: 'BaiJamjuree';
     color: #1F2147;
     letter-spacing: 0.5px;
@@ -43,7 +42,8 @@ section.site-section {
 }
 
 /* Header */
-header{
+
+header {
     margin-bottom: 50px;
     background-attachment: scroll;
     position: relative;
@@ -51,10 +51,10 @@ header{
     background-size: cover;
     margin-bottom: 0;
     background-position: center;
-  
 }
 
 /* Masthead */
+
 header.masthead {
     background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(47, 23, 15, 0.65)), url("../img/imagem3.jpg") top right no-repeat;
     background-size: cover;
@@ -66,77 +66,53 @@ header.masthead {
     display: flex;
     align-items: center;
     color: white;
-  }
-  
-  #about header.masthead{
+}
+
+#about header.masthead {
     background-color: #EFEFEF;
     background-image: none;
-  }
-
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-  }
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-  
-/* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
-    background-color: #777;
-}
-/* .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-} */
-
-.carousel-item > img {
-    min-width: 100%;
-    height: 32rem;
-    top: 0;
-    left: 0;
 }
 
-#sobre img{
+#sobre img {
     width: 400px;
 }
 
-#servicos{
+#servicos {
     background-color: #BCAAAA;
 }
 
-.card{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+.card {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
 }
 
-form{
+form {
     width: 50%;
 }
 
-#orcamento{
+#orcamento {
     font-family: 'BaiJamjuree';
     color: #1F2147;
 }
 
-#contato p{
+#contato .row{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contato p {
     color: white;
 }
 
-#contato p a{
+#contato p a {
     color: white;
+    text-decoration: none;
 }
 
-#servicos{
+#servicos {
     background: linear-gradient(rgba(255, 255, 255, 0.65), #BCAAAAa6), url("../img/imagem2.jpg") top right no-repeat;
 }
-#servicos li{
+
+#servicos li {
     text-decoration: none;
     font-family: 'BaiJamjuree';
     color: #1F2147;
@@ -145,12 +121,12 @@ form{
     font-size: 18px;
 }
 
-footer{
+footer {
     background-color: #1F2147;
     color: white;
     font-family: 'BaiJamjuree';
 }
 
-footer h2{
+footer h2 {
     font-size: 46px;
 }
