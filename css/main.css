@@ -3,30 +3,12 @@
     src: url('../vendor/Bai_Jamjuree/BaiJamjuree-Regular.ttf');
 }
 
-nav{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    font-family: 'BaiJamjuree';
-}
-
-nav a{
-    color: #1F2147;
-}
-
-nav a:hover{
-    /* color: #BCAAAA; */
-    color: #E4201E;
-}
-
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
 .custom-toggler.navbar-toggler {
     border-color: #ddd;
-}
-
-body{
-    margin-top: 71px;
 }
 
 h1{
@@ -38,17 +20,15 @@ h1{
 
 h2{
     font-family: 'BaiJamjuree';
-    font-size: 38px;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
-@media only screen and (max-width: 800px) {
-    h2{
-        font-size: 24px;
-    }
+span{
+    text-decoration: underline;
 }
-  
+
+
 #sobre p{
     font-family: 'BaiJamjuree';
     color: #1F2147;
@@ -62,6 +42,7 @@ section.site-section {
     padding-bottom: 5rem !important;
 }
 
+/* Header */
 header{
     margin-bottom: 50px;
     background-attachment: scroll;
@@ -73,6 +54,24 @@ header{
   
 }
 
+/* Masthead */
+header.masthead {
+    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(47, 23, 15, 0.65)), url("../img/imagem3.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  #about header.masthead{
+    background-color: #EFEFEF;
+    background-image: none;
+  }
 
 /* Carousel base class */
 .carousel {
@@ -134,6 +133,9 @@ form{
     color: white;
 }
 
+#servicos{
+    background: linear-gradient(rgba(255, 255, 255, 0.65), #BCAAAAa6), url("../img/imagem2.jpg") top right no-repeat;
+}
 #servicos li{
     text-decoration: none;
     font-family: 'BaiJamjuree';

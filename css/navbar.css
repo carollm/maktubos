@@ -1,0 +1,89 @@
+@font-face{
+  font-family:'BaiJamjuree';
+  src: url('../vendor/Bai_Jamjuree/BaiJamjuree-Regular.ttf');
+}
+
+/* Nav */
+#mainNav, .offcanvas{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'BaiJamjuree';
+} 
+
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: 0;
+}
+
+
+
+#mainNav .navbar-brand img {
+  height: 5rem;
+  content: url(../img/logo.svg);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link{
+  font-size: 1.1rem;
+  color: #1F2147;
+  letter-spacing: 0.0625em;
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #E4201E;
+}
+
+#mainNav.navbar-shrink{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+  height: 3rem;
+  transition: height 0.3s ease-in-out;
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link{
+  color: #1F2147;
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover{
+  color: #E4201E;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+}
+#mainNav.navbar-shrink .navbar-brand svg, #mainNav.navbar-shrink .navbar-brand img {
+  height: 2.5rem;
+  content: url(../img/logo.svg);
+}
+#mainNav .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+#mainNav .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  #mainNav{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+}

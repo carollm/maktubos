@@ -9,7 +9,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
+        }, 200, "easeInOutExpo");
         return false;
       }
     }
@@ -22,48 +22,21 @@
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-    target: '#sideNav'
+    target: '#mainNav'
   });
 
+  // Collapse Navbar
+  var navbarCollapse = function () {
+    if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+    } else {
+        $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+  
+  // Collapse now if page is not at top
+  navbarCollapse();
+  
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
-
-
-function(){
-
-  if($('.brands_slider').length)
-  {
-  var brandsSlider = $('.brands_slider');
-  
-  brandsSlider.owlCarousel(
-  {
-  loop:true,
-  autoplay:true,
-  autoplayTimeout:5000,
-  nav:false,
-  dots:false,
-  autoWidth:true,
-  items:8,
-  margin:42
-  });
-  
-  if($('.brands_prev').length)
-  {
-  var prev = $('.brands_prev');
-  prev.on('click', function()
-  {
-  brandsSlider.trigger('prev.owl.carousel');
-  });
-  }
-  
-  if($('.brands_next').length)
-  {
-  var next = $('.brands_next');
-  next.on('click', function()
-  {
-  brandsSlider.trigger('next.owl.carousel');
-  });
-  }
-  }
-  
-  
-  }
